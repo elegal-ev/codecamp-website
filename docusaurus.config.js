@@ -22,12 +22,23 @@ module.exports = {
           "https://elegal-göttingen.de/wp-content/uploads/2019/08/output-onlinepngtools-e1566832737451-300x90.png"
       },
       links: [
+
         { to: "docs/doc1", label: "Kurs", position: "left" },
         {
           href: "https://github.com/facebook/docusaurus",
           label: "GitHub",
           position: "right"
-        }
+        },
+        {
+          href: "https://elegal-göttingen.de/",
+          label: "Verein",
+          position: "left"
+        },
+        {
+          href: "https://elegal-göttingen.de/team/",
+          label: "Mitglied werden",
+          position: "left"
+        },
       ]
     },
     footer: {
