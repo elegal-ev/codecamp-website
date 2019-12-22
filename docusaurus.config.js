@@ -8,11 +8,11 @@
 module.exports = {
   title: "Legal Code Camp",
   tagline: "Eine Veranstaltung des elegal Göttingen e.V.",
-  url: "https://elegal-göttingen.de",
-  baseUrl: "/",
+  url: "https://elegal-ev.github.io/codecamp-website/",
+  baseUrl: "/codecamp-website/",
   favicon: "img/favicon.ico",
-  organizationName: "elegal Göttingen e.V.", // Usually your GitHub org/user name.
-  projectName: "CodeCamp", // Usually your repo name.
+  organizationName: "elegal-ev", // Usually your GitHub org/user name.
+  projectName: "codecamp-website", // Usually your repo name.
   themeConfig: {
     navbar: {
       title: "elegal Göttingen e.V.",
