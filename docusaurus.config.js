@@ -45,29 +45,41 @@ module.exports = {
       style: "dark",
       links: [
         {
-          title: "Docs",
+          title: "Code Camp",
           items: [
             {
-              label: "Docs",
+              label: "Einfuehrung",
               to: "docs/doc1"
             }
           ]
         },
         {
-          title: "Community",
+          title: "Verein",
           items: [
             {
-              label: "Discord",
-              href: "https://discordapp.com/invite/docusaurus"
-            }
+              label: "Homepage",
+              href: "https://elegal-göttingen.de/"
+            },
+            {
+              label: "Workshop",
+              href: "https://elegal-göttingen.de/workshop"
+            },
+            {
+              label: "Events",
+              href: "https://elegal-göttingen.de/events"
+            },
+            {
+              label: "Team",
+              href: "https://elegal-göttingen.de/team"
+            },
           ]
         },
         {
           title: "Social",
           items: [
             {
-              label: "Blog",
-              to: "blog"
+              label: "LinkedIn",
+              to: "/"
             }
           ]
         }
