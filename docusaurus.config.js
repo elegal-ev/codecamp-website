@@ -67,7 +67,7 @@ module.exports = {
               to: "docs/chapter-four"
             },
             {
-              label: "Strings und Dictionaries",
+              label: "Files, Strings und Dictionaries",
               to: "docs/chapter-five"
             },
             {

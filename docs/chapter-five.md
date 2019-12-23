@@ -1,26 +1,16 @@
 ---
 id: chapter-five
-title: Codingeinheit 5 - Strings und Dictionaries
-sidebar_label: Strings und Dictionaries
+title: Codingeinheit 5 - Files, Strings und Dictionaries
+sidebar_label: Files, Strings und Dictionaries
 ---
 
 # Strings
-
-```python
-from elegal_assert import *
-```
 
 ## Multiplikation
 
 Neben der Verkettung von Strings ist auch die Multiplikation moeglich, hierbei wird der String einfach `n`-mal wiederholt.
 
-```python
-hallo = "Hallo"
-zehn_hallos = hallo * 10 # Hier n = 10
-print(zehn_hallos)
-```
-
-    HalloHalloHalloHalloHalloHalloHalloHalloHalloHallo
+<iframe src="https://trinket.io/embed/python3/d24bc2c949" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 
 ## Indexing
 
@@ -28,7 +18,7 @@ Wie bereits bei Listen kann man auch bei Buchstaben und Teilstrings per Index ex
 
 ```python
 str = "eLegal Goettingen"
-print(str[1])
+print(str[1]) # L
 ```
 
 ## Negatives Indizieren
@@ -37,34 +27,20 @@ Analog ist auch negative Indizierung anwendbar.
 
 ```python
 str = "eLegal Goettingen"
-print(str[-1])
+print(str[-1]) # n
 ```
 
 ## Slicing
 
 Wie bei Listen ist der Doppelpunkt-Operator `:` mit Strings nutzbar.
 
-```python
-start, end = 6 , 13
-str = "Hallo Digitalisierung!"
-print(str[start:end])
-print(str[start:])
-print(str[:end])
-print(str[:])
-print(str is str[:])
-```
+<iframe src="https://trinket.io/embed/python3/2f730f74fe" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 
 ## "In" Operator
 
 Mit dem `in` Keyword laesst sich feststellen, ob eine bestimmte Zeichenfolge in einem String enthalten ist
 
-```python
-str = 'eLegal Goettingen'
-print('Legal' in str)
-print('Goettingen' in str)
-if 'KPMG Law' not in str:
-    print("Hier laeuft irgendetwas falsch!!!!!")
-```
+<iframe src="https://trinket.io/embed/python3/b4267dc7a1" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 
 ## Escaping
 
@@ -79,12 +55,7 @@ Die wichtigsten "escape characters" sind
 
 Der Folgende String ist nicht sehr übersichtlich, wenn man ihn ausgibt. Füge doch am Satzende eine neue Zeile an.
 
-```python
-string = "eLegal ist ein toller Verein, denn er stellt Bier.Ich möchte nicht in dieser Zeile stehen."
-print(string)
-
-check_string_for_elegal(string)
-```
+<iframe src="https://trinket.io/embed/python3/cdeede7618" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 
 ## String Methoden (Basics)
 
@@ -93,74 +64,39 @@ check_string_for_elegal(string)
 - `count(char)` Zaehlt die Buchstaben in einem String
 - `len()` Gibt die Menge an Buchstaben zurueck
 
-```python
-str = 'eLegal Goettingen'
-print(str.upper())
-print(str.lower())
-print(str.count('e'))
-print(len(str))
-```
+<iframe src="https://trinket.io/embed/python3/121fc6d856" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 
 ## String Formatierung
 
 Mit der `format` Funktionen lassen sich _Werte_ templaten.
 
-```python
-str = "Hallo {name}! Lass uns doch um {zeit} {stunden} Stunden Zivilrecht lernen.".format(name='Justus', zeit='09:00', stunden=16)
-
-print(str)
-```
+<iframe src="https://trinket.io/embed/python3/a1a8cb17b5" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 
 # Dictionaries
 
 Ein `dict` ist eine **Key-Value**-Datenstruktur mit der Syntax `{bezeichner : wert_hinter_dem_bezeichner}`.
 Als Beispiel:
 
-```python
-digitale_bibliothek = {"BGB" : "Buch 1\n Allgemeiner Teil\n Abschnitt 1 ..."}
-print(digitale_bibliothek["BGB"])
-```
+<iframe src="https://trinket.io/embed/python3/4157184884" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 
 Natuerlich kann ein Dictionary auch mehrere Key-Value-Paare haben.
 
 ```python
-telefonbuch = [
-    {"name": "Heinz", "telefonnummer": '+495512313'},
-    {"name": "Sven", "telefonnummer": '+49555123213'}
-]
 
-for eintrag in telefonbuch:
-    print("{} ist unter der Nummer {} erreichbar.".format(eintrag["name"], eintrag['telefonnummer']))
-
-
-
-# Im folgenden bezieht sich hier die 0 auf das erste Dictionary in der Telefonbuchliste.
-print(telefonbuch[0].keys())
-print(telefonbuch[0].values())
 ```
 
 Hierbei koennen unter anderem auch Listen als **Value** in einem Dictionary verwendet werden. Value eines Dictionaries kann auch erneut ein Dictionary sein.
 
-```python
-dict_1 = {
-    "dein_dictionary" : {"key" : "value"}
-}
-```
+<iframe src="https://trinket.io/embed/python3/c6e483f61f" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 
 Eines Besonderheit ist jedoch, dass diese Strukturen nicht als **Key** verwendet werden können.
 Führe zum testen folgenden Code aus:
 
-```python
-a = {[1,2]:[3,4]}
-```
+<iframe src="https://trinket.io/embed/python3/fe5e541c01" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 
 Ein Dictionary kann auch ohne Inhalt definiert werden.
 
-```python
-kopf_nach_klausur = {}
-kopf_nach_klausur["jura"] = "es kommt drauf an"
-print(kopf_nach_klausur)
-```
+<iframe src="https://trinket.io/embed/python3/531e776cd8" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 
 # Files
 
@@ -168,31 +104,9 @@ Wir lernen in diesem Abschnitt die wesentlichen Interaktionen mit Textdateien ke
 
 ## Textdatei lesen
 
-### Code
-
-```python
-def lese_datei_ein(pfad_zur_datei):
-    # Hier fragen wir mit der open()-Funktion Zugriff auf die Datei an.
-    # Hierbei bedeuten die letzten beiden Parameter:
-    # 'r' = Art des Zugriffes
-    #   zB 'r' = 'read', 'w' = write, 'rw' = read-write
-    # encoding='utf-8' = Unterstuetzung fuer Umlaute. Einfach immer nutzen
-    referenz_auf_datei = open(pfad_zur_datei, 'r', encoding='utf-8')
-    # .read() liesst die ganze Datei als Zeichenkette ein.
-    print(referenz_auf_datei.read())
-    # WICHTIG:
-    # Eine Datei muss immer geschlossen werden.
-    # Hierbei wird dem System gesagt, dass diese nicht mehr gebraucht wird.
-    # Vergisst man dies, kann man zB die Datei nicht mehr loeschen,
-    # bis das Programm beendet ist.
-    referenz_auf_datei.close()
-
-lese_datei_ein('textfile.txt')
-```
+<iframe src="https://trinket.io/embed/python3/c34f8d4e28" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 
 ## Text schreiben
-
-### Code
 
 ```python
 #!/usr/bin/env python3
@@ -207,15 +121,17 @@ if __name__ == '__main__':
     main()
 ```
 
-Alternativ mit `with`-Operator
+## `with`-Operator
+
+Mit dem `with`-Operator lassen sich sehr einfach und übersichtlich Variablen für einen bestimmten Geltungsbereich schaffen.
 
 ```python
 #!/usr/bin/env python3
 
 def main():
     with open('textfile.txt', 'w', encoding='utf-8') as f:
-        s = 'eLegal Goettingen ist cool!\n'
-        f.write(s)
+        s = f.read()
+        print(s)
 
 if __name__ == '__main__':
     main()
