@@ -23,9 +23,9 @@ module.exports = {
       },
       links: [
 
-        { to: "docs/doc1", label: "Kurs", position: "left" },
+        { to: "docs/intro", label: "Kurs", position: "left" },
         {
-          href: "https://github.com/facebook/docusaurus",
+          href: "https://github.com/elegal-ev",
           label: "GitHub",
           position: "right"
         },
@@ -48,9 +48,40 @@ module.exports = {
           title: "Code Camp",
           items: [
             {
-              label: "Einfuehrung",
-              to: "docs/doc1"
-            }
+              label: "Intro",
+              to: "docs/intro"
+            },
+            {
+              label: "Grundlagen",
+              to: "docs/chapter-one"
+            },
+            {
+              label: "Funktionen und Scope",
+              to: "docs/chapter-two"
+            }, {
+              label: "Wahrheitswerte, Kontrollstrukturen und Schleifen",
+              to: "docs/chapter-tree"
+            },
+            {
+              label: "Listen",
+              to: "docs/chapter-four"
+            },
+            {
+              label: "Strings und Dictionaries",
+              to: "docs/chapter-five"
+            },
+            {
+              label: "Klassen und Module",
+              to: "docs/chapter-six"
+            },
+            {
+              label: "Das Projekt",
+              to: "docs/project"
+            },
+            {
+              label: "Entwicklungsumgebung einrichten",
+              to: "docs/python-env"
+            },
           ]
         },
         {
@@ -79,6 +110,10 @@ module.exports = {
           items: [
             {
               label: "LinkedIn",
+              to: "/"
+            },
+            {
+              label: "Instagram",
               to: "/"
             }
           ]

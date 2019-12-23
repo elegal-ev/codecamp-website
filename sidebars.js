@@ -7,7 +7,7 @@
 
 module.exports = {
   docs: {
-    Docusaurus: ['doc1', 'doc2', 'doc3'],
-    Features: ['mdx'],
+    Programmierkurs: ['intro', 'chapter-one', 'chapter-two', 'chapter-tree', 'chapter-four', 'chapter-five', 'chapter-six',],
+    Projekt: ['project', 'python-env'],
   },
 };
