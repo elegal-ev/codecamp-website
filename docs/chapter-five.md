@@ -131,7 +131,7 @@ Mit dem `with`-Operator lassen sich sehr einfach und √ºbersichtlich Variablen f√
 def main():
     with open('textfile.txt', 'w', encoding='utf-8') as f:
         s = f.read()
-        print(s)
+        print(s) # Textinhalt der Datei
 
 if __name__ == '__main__':
     main()

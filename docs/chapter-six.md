@@ -4,42 +4,21 @@ title: Codingeinheit 6 - Klassen und Module
 sidebar_label: Klassen und Module
 ---
 
-# Klassen und Module
-
 # Module
 
-In der Programmierung gibt es oft Probleme, die man in jedem Projekt hat (Erstellen von Dateien, Kommunikation ueber Internet). Um den Code wiederzuverwenden, kann man diese in sogenannte Module (Libraries) zusammenfassen. In Python sind diese Module einfach nur eine Textdatei oder ein Ordner an Textdateien
+In der Programmierung gibt es oft Probleme, die man in jedem Projekt hat (Erstellen von Dateien, Kommunikation über Internet). Um den Code wiederzuverwenden, kann man diese in sogenannte Module (Libraries) zusammenfassen. In Python sind diese Module einfach nur eine Textdatei oder ein Ordner an Textdateien
 
 Wir erstellen um dieses Beispiel zu veranschaulichen ein Modul, welches zwei Funktionen enthalten, welche etwas ausgeben.
-
-```python
-from elegal_assert import *
-```
-
-```python
-def elegal():
-    print("Elegal ist super!")
-
-def kmpg():
-    print("KPMG ist krass!")
-```
 
 Wir speichern diesen Codeabschnitt in `mein_modul.py`.
 
 Jetzt koennen wir diesen Code aus einer anderen Datei im gleichen Verzeichnis einfach importieren.
 
-```python
-import mein_modul
+<iframe src="https://trinket.io/embed/python3/1e5927079b" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 
-mein_modul.elegal()
-mein_modul.kpmg()
-```
+> **Beachte:** Hierbei steht `mein_modul.elegal()` für "Die Funktion namens `elegal`, welche du unter `mein_modul` gefunden hast".
 
-Beachte: Hierbei steht `mein_modul.elegal()` fuer "Die Funktion namens `elegal`, welche du unter `mein_modul` gefunden hast".
-
-#### Anmerkung
-
-Module muessen stets im Pfad verfuegbar sein!
+> Module müssen stets im Pfad verfügbar sein!
 
 ## Import unter anderen Namen
 
@@ -49,7 +28,7 @@ Um hier nicht immer den Namen auszuschreiben, gibt es zwei Moeglichkeiten:
 
 ## Unter anderen Namen importieren
 
-Hierfuer gibt es `as`-Schluesselwort in Python.
+Hierfür gibt es `as`-Schlüsselwort in Python.
 
 ```python
 import liste_aller_praezedenzfaelle_der_letzten_zwanzig_jahre as liste
@@ -60,7 +39,7 @@ liste.funktion()
 
 ## Ohne Namen importieren
 
-Hierfuer gibt es das `from`-Schluesselwort in Python, womit man einzelne Methoden importiert. Danach kann man diese wie die Standardmethoden ohne Modulnamen aufrufen.
+Hierfür gibt es das `from`-Schlüsselwort in Python, womit man einzelne Methoden importiert. Danach kann man diese wie die Standardmethoden ohne Modulnamen aufrufen.
 
 ```python
 from mein_modul import elegal
@@ -74,7 +53,7 @@ Hierbei haben wir einfach die Funktion `elegal` importiert, nicht `kpmg`. Wenn m
 from mein_modul import *
 ```
 
-wobei der `*` fuer "alles" steht.
+wobei der `*` für "alles" steht.
 
 # Klassen
 
@@ -90,7 +69,7 @@ Hier sei der Preis abhaengig von
 - Extraausstattungen
 - Unfallfrei
 
-Dies wuerde im Code wiefolgt aussehen:
+Dies würde im Code wiefolgt aussehen:
 
 ```python
 def wert_rechner(baujahr, kaufpreis, marke, modell, ausstattung, unfallfrei):
@@ -120,25 +99,25 @@ Um diese Probleme zu loesen, gab es viele Ansaetze, wovon das meist genutzte die
 
 Um Probleme der reellen Welt in Code zu abstrahieren, bietet es sich an, hier auch mit einem Auto, statt mit einer Liste an Werten, zu arbeiten.
 
-Und genau dies sind Klassen und Objekte. Hier ist eine Klasse "Auto" quasi der "Bauplan" fuer Autos, welcher definiert, was genau ein Auto hat.
+Und genau dies sind Klassen und Objekte. Hier ist eine Klasse "Auto" quasi der "Bauplan" für Autos, welcher definiert, was genau ein Auto hat.
 
-Nach obigen Ueberlegungen muessen wir nur noch definieren, wie genau der Bauplan ein Auto erstellen soll:
+Nach obigen überlegungen müssen wir nur noch definieren, wie genau der Bauplan ein Auto erstellen soll:
 
 ```python
 Bauplan Auto:
     Erstellung des Autos:
-    (Hierfuer benoetige ich Baujahr, Kaufpreis, Marke, Modell,
+    (Hierfür benoetige ich Baujahr, Kaufpreis, Marke, Modell,
       Extraausstattungen und ob es unfallfrei ist.)
 
-    Setze fest, dass bei diesem Auto das Baujahr das Uebergebene Baujahr ist.
-    Dann setze fest, dass bei diesem Auto der Kaufpreis dem Uebergebenen gleicht.
-    Dann setze fest, dass bei diesem Auto die Marke und das Modell uebereinstimmt.
-    Dann setze fest, dass die Ausstattung uebereinstimmt.
+    Setze fest, dass bei diesem Auto das Baujahr das übergebene Baujahr ist.
+    Dann setze fest, dass bei diesem Auto der Kaufpreis dem übergebenen gleicht.
+    Dann setze fest, dass bei diesem Auto die Marke und das Modell übereinstimmt.
+    Dann setze fest, dass die Ausstattung übereinstimmt.
     Dann halte fest, ob das Auto unfallfrei ist.
 Bauplan Ende.
 ```
 
-Hierfuer sieht der Pythoncode sehr aehnlich aus:
+Hierfür sieht der Pythoncode sehr aehnlich aus:
 
 ```python
 class Auto:
@@ -192,13 +171,13 @@ def wert_rechner(auto):
 Wenn man weiter an Objekte in der reellen Welt denkt, kann man Funktionen in 2 Kategorien aufteilen:
 
 - Dinge die an dem Auto selbst passieren (fahren, bremsen) (Objektmethode)
-- Dinge wofuer ein Auto gebraucht wird (Belegen eines Parkplatzes) (Normale Funktion)
+- Dinge wofür ein Auto gebraucht wird (Belegen eines Parkplatzes) (Normale Funktion)
 
 Objektmethoden zeichnen sich dadurch aus, dass sie kein Sinn hat, diese ohne das Objekt aufzurufen. Es ist halt nicht moeglich, ein Auto zu fahren, welches nicht existiert.
 
-In Python schreibt man Objektmethoden in Klassen selbst, wofuer das oben benannte `self` dafuer steht, dass es sich auf das eigene Objekt bezieht.
+In Python schreibt man Objektmethoden in Klassen selbst, wofür das oben benannte `self` dafür steht, dass es sich auf das eigene Objekt bezieht.
 
-Als Beispiel nun mit der Methode `unfall_bauen`, welche als Folge unfallfrei auf falsch setzt.
+Als Beispiel nun mit der Methode `unfall_baün`, welche als Folge unfallfrei auf falsch setzt.
 
 ```python
 class Auto:
@@ -221,27 +200,11 @@ Zuletzt ist es noch sinnvoll, dass das printen wie erwartet klappt.
 Wie wir bereits gelernt haben, sind Funktionen wie `__init__` von Python selbst gestellte Funktionen.
 Zum printen von Funktionen gibt es nun die von Python gestellte `__str__`, welche man einfach definieren muss. Beispiel:
 
-```python
-class Person:
-    def __init__(self, vorname, nachname, alter):
-        self.vorname = vorname
-        self.nachname = nachname
-        self.alter = alter
-
-    # Coole weitere Funktionen
-    # ...
-
-    def __str__(self):
-        string_zur_ausgabe = self.vorname + " " + self.nachname + ": " + str(self.alter) + " Jahre alt."
-        return string_zur_ausgabe
-
-john = Person("John", "Doe", 36)
-print(john)
-```
+<iframe src="https://trinket.io/embed/python3/93841f6c32" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 
 ### Beispiele
 
-So wuerde man z.B. ein Verein definieren
+So würde man z.B. ein Verein definieren
 
 ```python
 class Verein:
