@@ -14,7 +14,7 @@ Funktionen werden mit dem Begriff `def` (engl. define) eingeleitet:
 
 <iframe src="https://trinket.io/embed/python3/d238995f48" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 
-Hierbei stellen die Leerzeichen vor den `print()`-Befehlen dar, was zur Funktion gehoert und was nicht. Spiel doch einfach selbst ein wenig mit der Einrueckung rum!
+Hierbei stellen die Leerzeichen vor den `print()`-Befehlen dar, was zur Funktion gehoert und was nicht. Spiel doch einfach selbst ein wenig mit der Einrückung rum!
 
 Genauso wie bei `print` wird diese einfach mit `()` aufgerufen:
 
@@ -35,7 +35,7 @@ Schreibe eine Funktion, welche "eLegal ist toll" ausgibt und nenne sie "eLegal"
 
 Betrachten wir folgende Problemstellung:
 
-Anwalt A hat in seiner Kanzelei zahlreiche Mandanten, die er taeglich mit einer netten Email begruesst. Nachdem er durch seine Kooperation mit eLegal e.V. exponentielle Wachstueme erreicht hat, schrieb er Funktionen, die diese Aufgabe fuer ihn trivialisieren. Nun muss er für jeden seiner Mandanten eine komplett neue Funktion schreiben.
+Anwalt A hat in seiner Kanzelei zahlreiche Mandanten, die er taeglich mit einer netten Email begrüsst. Nachdem er durch seine Kooperation mit eLegal e.V. exponentielle Wachstüme erreicht hat, schrieb er Funktionen, die diese Aufgabe für ihn trivialisieren. Nun muss er für jeden seiner Mandanten eine komplett neue Funktion schreiben.
 
 <iframe src="https://trinket.io/embed/python3/2ddfb0fbc5" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 
@@ -60,9 +60,9 @@ Möchte man im Fall von yes_keyword vom Standard abweichen, so muss man die Funk
 yes_keyword("Neuer Parameter")
 ```
 
-## Rueckgabewerte
+## Rückgabewerte
 
-Damit die Ergebnisse deiner Funktion nicht nach dem printen verloren gehen, gibt es das sogenannte `return`-Schluesselwort
+Damit die Ergebnisse deiner Funktion nicht nach dem printen verloren gehen, gibt es das sogenannte `return`-Schlüsselwort
 
 <iframe src="https://trinket.io/embed/python3/1bd72b36b7" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 

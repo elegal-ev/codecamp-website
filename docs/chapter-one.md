@@ -49,7 +49,7 @@ Mit der Funktion `print()` können unteranderem Strings wiedergegeben werden.
 
 ## Integers
 
-Neben Strings (Zeichenketten) sind Integer (Ganzzahlen) wichtig. Fuer diese gibt es folgende Operationen
+Neben Strings (Zeichenketten) sind Integer (Ganzzahlen) wichtig. Für diese gibt es folgende Operationen
 
 ## Arithmetische Operationen
 
@@ -63,8 +63,8 @@ print(11 % 5) # 1
 
 <iframe src="https://trinket.io/embed/python3/d492659d82" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 
-Das `%` steht fuer den ganzzahligen Rest einer Division.
-Hierbei ist es ganz wichtig, dass die Zahlen nicht in Anfuehrungszeichen sind, da sonst wie oben diese einfach nur hintereinandergeschrieben werden
+Das `%` steht für den ganzzahligen Rest einer Division.
+Hierbei ist es ganz wichtig, dass die Zahlen nicht in Anführungszeichen sind, da sonst wie oben diese einfach nur hintereinandergeschrieben werden
 
 ```python
 print(1 + 1) # 2
@@ -84,29 +84,9 @@ Berechne Rs Punkteschnitt wie folgt:
 
 ## Datentypen
 
-Um Datentypen zu verbinden, muss man diese vorher umwandeln. Deswegen ist folgendes ungueltig:
+Um Datentypen zu verbinden, muss man diese vorher umwandeln. Deswegen ist folgendes ungültig:
 
-```python
-# Don't
-print("Ich habe " + 5 + " Schönfelder")
-
-# Do
-print("Ich habe " + str(5) + " Schönfelder")
-```
-
-    ---------------------------------------------------------------------------
-
-    TypeError                                 Traceback (most recent call last)
-
-    <ipython-input-35-0a7ae42497c8> in <module>
-          1 # Don't
-    ----> 2 print("Ich habe " + 5 + " Schönfelder")
-          3
-          4 # Do
-          5 print("Ich habe " + str(5) + " Schönfelder")
-
-
-    TypeError: can only concatenate str (not "int") to str
+<iframe src="https://trinket.io/embed/python3/0834f18005" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 
 <center>
     <img alt="witzige eLegal Meme" src="https://i.imgflip.com/3bz63n.jpg" />
@@ -117,7 +97,7 @@ print("Ich habe " + str(5) + " Schönfelder")
 Anwalt A ist fortschrittlich und benutzt zur Berechnung seiner Kosten Python.
 Irgendwas funktioniert hier jedoch nicht so richtig. Evtl. Kannst du ihm ja helfen.
 
-> Tipp: Nutze hierfuer die von Python gegebenen Fehlermeldungen!
+> Tipp: Nutze hierfür die von Python gegebenen Fehlermeldungen!
 
 <iframe src="https://trinket.io/embed/python3/3db81e2e07" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 
