@@ -31,10 +31,9 @@ print(not not not True)
 print(54.4 <= 144.2)
 print(not not x)
 print(not x)
-
-# Nun dein eigenes Beispiel!
-print()
 ```
+
+<iframe src="https://trinket.io/embed/python3/ab8cc8cd9b" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 
 Hiebei ist der Unterschied zwischen `=` und `==` relevant.
 
@@ -43,28 +42,7 @@ Hiebei ist der Unterschied zwischen `=` und `==` relevant.
 
 Vertiefe dein Wissen, indem du folgenden Code ausführst:
 
-```python
-print("1", True and True)
-print("2", False and True)
-print("3", 1 == 1 and 2 == 1)
-print("4", "test" == "test")
-print("5", 1 == 1 or 2 != 1)
-print("6", True and 1 == 1)
-print("7", False and 0 != 0)
-print("8", True or 1 == 1)
-print("9", "test" == "testing")
-print("10", 1 != 0 and 2 == 1)
-print("11", "test" != "testing")
-print("12", "test" == 1)
-print("13", not (True and False))
-print("14", not (1 == 1 and 0 != 1))
-print("15", not (10 == 1 or 1000 == 1000))
-print("16", not (1 != 10 or 3 == 4))
-print("17", not ("testing" == "testing" and "Zed" == "Cool Guy"))
-print("18", 1 == 1 and not ("testing" == 1 or 1 == 0))
-print("19", "chunky" == "bacon" and not (3 == 4 or 3 == 3))
-print("20", 3 == 3 and not ("testing" == "testing" or "Python" == "Fun"))
-```
+<iframe src="https://trinket.io/embed/python3/eae0dedab7" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 
 # Kontrollflüsse
 
@@ -106,24 +84,7 @@ if objektiver_tatbestand_303_I_stgb == True:
 Eine Besonderheit von einigen Sprachen, wie auch Python, ist, dass man die obige Logik (z.b. "`if fremd == True`") auch versimplifiziert Darstellen kann. aus "`if fremd == True`" wird "`if fremd`"
 Wendet man dieses Wissen an, so ergibt sich folgendes Bild
 
-```python
-gegenstand = "Pokal"
-sache = True
-fremd = True
-beschädigt = False
-zerstört = True
-objektiver_tatbestand_303_I_stgb = False
-
-if sache:
-    if fremd:
-        if beschädigt:
-            objektiver_tatbestand_303_I_stgb = True
-        elif zerstört:
-            objektiver_tatbestand_303_I_stgb = True
-
-if objektiver_tatbestand_303_I_stgb:
-    print("Der objektive Tatbestand von § 303 I Stgb ist im Falle vom " + gegenstand + " erfüllt")
-```
+<iframe src="https://trinket.io/embed/python3/7185efd25c" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 
 ## Weitere logische Operatoren
 
@@ -154,16 +115,9 @@ if not (beschädigt and zerstört):
 
 Loops wendet man an, wenn man Dinge mehrfach ausführen möchte.
 
-```python
-gerichtsverfahren = 10
-for x in range(gerichtsverfahren): # range() beginnt ab 0 an zu zählen und stoppt eine Ganzzahl vor dem Übergeben Wert.
-    print("Im Namen des Volkes ergeht folgendes Urteil")
-```
+<iframe src="https://trinket.io/embed/python3/4290e8d215" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 
-```python
-help(range)
-# Zeigt die Dokumentation zu einer bestimmten Funktion oder Bibliothek an.
-```
+<iframe src="https://trinket.io/embed/python3/ce3f94eec3" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 
 Ein Ausschnitt `help(range)`:
 
@@ -217,27 +171,4 @@ Diese geht pro Durchlauf der äusseren Schleife komplett alle Durchläufe der in
 
 Ermittle den Wahrheitswert folgender Aussagen:
 
-```python
-from elegal_assert import *
-
-test = [
-    2 ** 3 == 8,
-    True or False and True,
-    (False or False) and True,
-    not False or False,
-]
-
-test_bools(test)
-```
-
-    ---------------------------------------------------------------------------
-
-    NameError                                 Traceback (most recent call last)
-
-    <ipython-input-2-ee4d09c7ee04> in <module>
-          8 ]
-          9
-    ---> 10 test_bools(test)
-
-
-    NameError: name 'test_bools' is not defined
+<iframe src="https://trinket.io/embed/python3/00993a83d5" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
