@@ -13,6 +13,16 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import styles from './styles.module.css';
 
+class RedirectPage extends React.Component {
+  componentDidMount() {
+    window.location.replace('https://elegal.dev')
+  }
+
+  render() {
+    return <div></div>
+  }
+}
+
 const features = [
   {
     title: <>Platzhalter</>,
@@ -72,6 +82,7 @@ function Home() {
       <script type="text/javascript" async
         src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
       </script>
+      <RedirectPage />
       <header className={classnames('hero hero--primary', styles.heroBanner)}>
         <div className="container">
           <h1 className="hero__title">{siteConfig.title}</h1>
@@ -105,4 +116,5 @@ function Home() {
   );
 }
 
-export default Home;
+
+export default RedirectPage;

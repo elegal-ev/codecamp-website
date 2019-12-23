@@ -19,7 +19,7 @@ module.exports = {
       logo: {
         alt: "elegal Göttingen e.V. Logo",
         src:
-          "https://elegal-göttingen.de/wp-content/uploads/2019/08/output-onlinepngtools-e1566832737451-300x90.png"
+          "img/logo.png"
       },
       links: [
 
@@ -110,11 +110,15 @@ module.exports = {
           items: [
             {
               label: "LinkedIn",
-              to: "/"
+              to: "https://de.linkedin.com/company/elegalgoettingen"
             },
             {
               label: "Instagram",
               to: "/"
+            },
+            {
+              label: "Facebook",
+              to: "https://www.facebook.com/eLegalGoettingen/"
             }
           ]
         }

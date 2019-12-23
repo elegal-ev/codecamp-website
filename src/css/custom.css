@@ -37,3 +37,7 @@
 iframe {
   margin: 2vh;
 }
+
+.navbar__brand {
+  pointer-events: none;
+}
