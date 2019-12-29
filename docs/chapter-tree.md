@@ -48,8 +48,8 @@ Vertiefe dein Wissen, indem du folgenden Code ausführst:
 
 Man stelle sich vor, man habe ein Prüfschema abzuarbeiten. - Um zur Erfüllung eines strafrechtlichen Tatbestands zu kommen, müssen alle Voraussetzungen ohne Ausnahmen erfüllt sein.
 D.h., die Prüfungspunkte haben einen bestimmten Wahrheitswert inne.
-Mithile von Wahrheitswerten, werden wir in der Programmiersprache Python bestimmte Programmabfolgen kontrollieren können.
-Dies nennt man in der Informatik **Kontrollflüsse**
+Mithilfe von Wahrheitswerten werden wir in der Programmiersprache Python bestimmte Programmabfolgen kontrollieren können.
+Diese nennt man in der Informatik **Kontrollflüsse**
 
 ```python
 x = 2
@@ -81,7 +81,7 @@ if objektiver_tatbestand_303_I_stgb == True:
     print("Der objektive Tatbestand von § 303 I Stgb ist im Falle vom " + gegenstand + " erfüllt")
 ```
 
-Eine Besonderheit von einigen Sprachen, wie auch Python, ist, dass man die obige Logik (z.b. "`if fremd == True`") auch versimplifiziert Darstellen kann. aus "`if fremd == True`" wird "`if fremd`"
+Eine Besonderheit von einigen Sprachen, wie auch Python, ist, dass man die obige Logik (z.b. "`if fremd == True`") auch versimplifiziert Darstellen kann. Aus "`if fremd == True`" wird "`if fremd`"
 Wendet man dieses Wissen an, so ergibt sich folgendes Bild
 
 <iframe src="https://trinket.io/embed/python3/7185efd25c" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
@@ -139,7 +139,7 @@ while condition:
     print(n)
     n += 5
 
-# T hat O beleidigt. Er hat Freiheitsstrafe von einem Jahr erhalten
+# T hat O beleidigt. Er hat eine Freiheitsstrafe von einem Jahr erhalten
 freiheitsstrafe_aktiv = True
 tag = 0
 
@@ -157,7 +157,7 @@ print('Entlassen')
 
 ## Verschachtelte Schleifen
 
-Natürlich können Schleifen auch ineinandergeschrieben werden.
+Natürlich können Schleifen auch ineinander geschrieben werden.
 
 ```python
 for zähler1 in range(2):
