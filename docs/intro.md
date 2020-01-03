@@ -21,7 +21,7 @@ Zum Beispiel kannst du Python für folgende Gebiete benutzen
 
 und vieles mehr!
 
-Wir empfehlen dir, gemäß der Anleitung zur [Einrichtung deiner Entwicklungsumgebung](/docs/python-env), entsprechend deinen PC einzurichten.
+Wir empfehlen dir, gemäß der Anleitung zur [Einrichtung deiner Entwicklungsumgebung](/codecamp-website/docs/python-env), entsprechend deinen PC einzurichten.
 
 Der Kurs ist von Kapitel 1 bis 6 auch komplett im Browser absolvierbar.
 
