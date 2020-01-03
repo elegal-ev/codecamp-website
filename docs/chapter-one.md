@@ -24,7 +24,7 @@ Beispiel
 
 ## Strings
 
-Als Strings bezeichnet man Zeichenketten, hierbei ist es wichtig, dass diese entweder innerhalb von `'` oder `"` ist
+Als Strings (🎻) bezeichnet man Zeichenketten, hierbei ist es wichtig, dass diese entweder innerhalb von `'` oder `"` ist.
 
 ```python
 print('Ich "bin" interaktiv!')
@@ -61,7 +61,7 @@ print(2 ^ 3) # 8
 print(11 % 5) # 1
 ```
 
-<iframe src="https://trinket.io/embed/python3/d492659d82" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+<iframe src="https://trinket.io/embed/python3/469984674c" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 
 Das `%` steht für den ganzzahligen Rest einer Division.
 Hierbei ist es ganz wichtig, dass die Zahlen nicht in Anführungszeichen sind, da sonst wie oben diese einfach nur hintereinandergeschrieben werden
@@ -80,7 +80,7 @@ Berechne Rs Punkteschnitt wie folgt:
     <img src="/static/img/punkteschnitt.svg" alt="Punkteschnittformel" />
 </center>
 
-<iframe src="https://trinket.io/embed/python3/6a9e7c1ba3" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+<iframe src="https://trinket.io/embed/python3/afa82f47bf" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 
 ## Datentypen
 
