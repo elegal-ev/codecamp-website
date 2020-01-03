@@ -4,4 +4,53 @@ title: Die Einrichtung deiner Entwicklungsumgebung
 sidebar-label: Einrichtung von Python
 ---
 
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+Wir helfen dir hier bei der Einrichtung der Python Umgebung auf deinem Computer. Damit kannst du dann selbst Python-Apps schreiben.
+
+## Download und Installation von Python
+
+Wie du bestimmt schon festgestellt hast, arbeiten wir mit Python 3. Downloade einfach unter [python.org](https://python.org/) den für dein Betriebtssystem passenden Installer.
+
+<video>
+    <source src="video/install_python.webm" type="video/webm">
+    <p>Your browser doesn't support HTML5 video.</p>
+</video>
+
+Folge anschließend den Anweisungen des Installers.
+
+## Einrichtung von VS Code
+
+Damit du das Programmieren auch richtig lernst, verzichten wir hier auf eine Entwicklungsumgebung wie PyCharm. 
+Vielmehr greifen wir auf einen Code Editor zurück, VS Code.
+
+Ein Code Editor ist mehr als ausreichend für die Bearbeitung des Projekts. Mit einer Entwicklungsumgebung zu arbeiten, wäre wie mit Kanonen auf Spatzen zu schießen. 😁
+
+### Download von VS Code
+
+Die Downloadseite von VS Code findest du unter https://code.visualstudio.com/
+
+<video>
+    <source src="video/download_vscode.webm" type="video/webm">
+    <p>Your browser doesn't support HTML5 video.</p>
+</video>
+
+### Hinzufügen der Python Extensions
+
+Damit der Editor auch vernünftig mit Python umgehen kann, fügen wir noch die Python Extensions für VS Code hinzu.
+
+<video>
+    <source src="video/install_python_extensions.webm" type="video/webm">
+    <p>Your browser doesn't support HTML5 video.</p>
+</video>
+
+
+### Installieren von Python Modulen
+
+TODO
+- Virtualenv?
+
+### Ausführen eines Python Skripts in VS Code
+
+TODO
+- Video
+
+So, das wars auch schon. Ab jetzt bist du startklar! 🚀
