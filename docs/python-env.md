@@ -10,7 +10,7 @@ Wir helfen dir hier bei der Einrichtung der Python Umgebung auf deinem Computer.
 
 Wie du bestimmt schon festgestellt hast, arbeiten wir mit Python 3. Downloade einfach unter [python.org](https://python.org/) den für dein Betriebtssystem passenden Installer.
 
-![](/img/install_python.gif)
+![](https://raw.githubusercontent.com/elegal-ev/codecamp-website/1e3250f3c006f1b29b2078dcbfe1842de8ba39ae/static/img/install_python.gif)
 
 Folge anschließend den Anweisungen des Installers.
 
@@ -25,13 +25,13 @@ Ein Code Editor ist mehr als ausreichend für die Bearbeitung des Projekts. Mit 
 
 Die Downloadseite von VS Code findest du unter https://code.visualstudio.com/
 
-![](/img/download_vscode.gif)
+![](https://raw.githubusercontent.com/elegal-ev/codecamp-website/1e3250f3c006f1b29b2078dcbfe1842de8ba39ae/static/img/download_vscode.gif)
 
 ### Hinzufügen der Python Extensions
 
 Damit der Editor auch vernünftig mit Python umgehen kann, fügen wir noch die Python Extensions für VS Code hinzu.
 
-![](/img/install_python_extensions.gif)
+![](https://raw.githubusercontent.com/elegal-ev/codecamp-website/1e3250f3c006f1b29b2078dcbfe1842de8ba39ae/static/img/install_python_extensions.gif)
 
 
 ### Installieren von Python Modulen

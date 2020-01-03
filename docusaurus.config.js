@@ -132,7 +132,6 @@ module.exports = {
       copyright: `Copyright © ${new Date().getFullYear()} - Lars Quentin, Anton Wietzke, Julia Held und Valerius Mattfeld.`
     }
   },
-  plugins: ['@docusaurus/plugin-ideal-image'],
   presets: [
     [
       "@docusaurus/preset-classic",
