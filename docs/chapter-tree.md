@@ -6,7 +6,7 @@ sidebar_label: Wahrheitswerte, Kontrollstrukturen und Schleifen
 
 # Booleans
 
-Booleans sind Wahrheitswerte. Diese fassen einen Gesamtausdruck in Wahr oder Falsch zusammen.
+Booleans sind Wahrheitswerte. Diese fassen einen Gesamtausdruck in Wahr (true) oder Falsch (false) zusammen.
 
 (Binär `0`/`1; logisch`w`/`f`; Python`True`/`False`)
 
@@ -37,7 +37,7 @@ print(not x)
 
 Hiebei ist der Unterschied zwischen `=` und `==` relevant.
 
-- `x = 4` ist die Zuweisung. (Der Variable `x` wird den Wert `4` zugewiesen)
+- `x = 4` ist ein Zuweisungsoperator. (Der Variable `x` wird den Wert `4` zugewiesen)
 - `x == 4` ist der logische Vergleich (Der Wert der Variable `x` wird auf Gleichheit mit `4` überprüft)
 
 Vertiefe dein Wissen, indem du folgenden Code ausführst:
