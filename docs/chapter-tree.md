@@ -6,13 +6,12 @@ sidebar_label: Wahrheitswerte, Kontrollstrukturen und Schleifen
 
 # Booleans
 
-Booleans sind Wahrheitswerte. Diese fassen einen Gesamtausdruck in Wahr (true) oder Falsch (false) zusammen.
+Booleans sind Wahrheitswerte. Diese fassen einen Gesamtausdruck in Wahr (true) oder Falsch (false) zusammen. 
 
 (Binär `0`/`1; logisch`w`/`f`; Python`True`/`False`)
 
 ```python
-x = True
-# Wir weisen der Variable x eine wahre Aussage zu.
+
 """Eine Aussage ist ein aus Wörtern
 und/oder mathematischen Zeichen
 aufgebauter Ausdruck,
@@ -28,7 +27,11 @@ print(3 >= 3)
 print(not False)
 print(5 != 4) # hierbei bedeutet das != "nicht gleich"
 print(not not not True)
-print(54.4 <= 144.2)
+print(54.4 <= 144.2) 
+
+x = True
+# Wir weisen der Variable x eine wahre Aussage zu.
+
 print(not not x)
 print(not x)
 ```
@@ -42,11 +45,10 @@ Hiebei ist der Unterschied zwischen `=` und `==` relevant.
 
 Vertiefe dein Wissen, indem du folgenden Code ausführst:
 
-<iframe src="https://trinket.io/embed/python3/eae0dedab7" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 
 # Kontrollflüsse
 
-Man stelle sich vor, man habe ein Prüfschema abzuarbeiten. - Um zur Erfüllung eines strafrechtlichen Tatbestands zu kommen, müssen alle Voraussetzungen ohne Ausnahmen erfüllt sein.
+Man stelle sich vor, man habe ein Prüfschema abzuarbeiten. Um zur Erfüllung eines strafrechtlichen Tatbestands zu kommen, müssen alle Voraussetzungen ohne Ausnahmen erfüllt sein.
 D.h., die Prüfungspunkte haben einen bestimmten Wahrheitswert inne.
 Mithilfe von Wahrheitswerten werden wir in der Programmiersprache Python bestimmte Programmabfolgen kontrollieren können.
 Diese nennt man in der Informatik **Kontrollflüsse**
@@ -81,6 +83,8 @@ if objektiver_tatbestand_303_I_stgb == True:
     print("Der objektive Tatbestand von § 303 I Stgb ist im Falle vom " + gegenstand + " erfüllt")
 ```
 
+Hinweis: 
+Der Operator elif(andernfalls) steht für 'else if' und verweist auf die Alternative der if-Bedingung.  
 Eine Besonderheit von einigen Sprachen, wie auch Python, ist, dass man die obige Logik (z.b. "`if fremd == True`") auch versimplifiziert Darstellen kann. Aus "`if fremd == True`" wird "`if fremd`"
 Wendet man dieses Wissen an, so ergibt sich folgendes Bild
 
@@ -110,12 +114,23 @@ if sache and fremd and (beschädigt or zerstört):
 if not (beschädigt and zerstört):
     objektiver_tatbestand_303_I_stgb = False
 ```
+<iframe src="https://trinket.io/embed/python3/eae0dedab7" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 
 # Loops
 
-Loops wendet man an, wenn man Dinge mehrfach ausführen möchte.
+for-Loops
+Loops (Schleifen) wendet man an, wenn man Dinge mehrfach ausführen möchte. Als erstes lernt ihr nun die for-Schleife kennen. Diese wird benutzt, wenn der Code wiederholt ausgeführt werden soll - die Anzahl der Wiederholungen muss dabei vorgegeben sein.    
+
+Vorlesungen = ["Strafrecht I", "Staatsrecht I", "BGB I"]
+for x in Vorlesungen:
+print (x)
+#TODO: mit Ausgabe
+
+range - Die Wiederholungen können auch mit Hilfe der range-Funktion ausgeführt werden. Wichtig ist dabei, dass man in der Informatik bei 0 anfängt zu zählen und nicht bei 1. 
+Hier ein kleines Beispiel: 
 
 <iframe src="https://trinket.io/embed/python3/4290e8d215" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
 
 <iframe src="https://trinket.io/embed/python3/ce3f94eec3" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 
@@ -128,6 +143,8 @@ Ein Ausschnitt `help(range)`:
 > When step is given, it specifies the increment (or decrement).
 
 ## while loop
+
+Im Gegensatz zu den for-loops wiederholen while-loops den Code so lange,bis die gegebene Bedingung nicht mehr erfüllt ist.   
 
 ```python
 import time
