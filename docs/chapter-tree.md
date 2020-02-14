@@ -45,6 +45,8 @@ Hiebei ist der Unterschied zwischen `=` und `==` relevant.
 
 Vertiefe dein Wissen, indem du folgenden Code ausführst:
 
+<iframe src="https://trinket.io/embed/python3/eae0dedab7" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
 
 # Kontrollflüsse
 
@@ -85,8 +87,8 @@ if objektiver_tatbestand_303_I_stgb == True:
 
 Hinweis: 
 Der Operator elif(andernfalls) steht für 'else if' und verweist auf die Alternative der if-Bedingung.  
-Eine Besonderheit von einigen Sprachen, wie auch Python, ist, dass man die obige Logik (z.b. "`if fremd == True`") auch versimplifiziert Darstellen kann. Aus "`if fremd == True`" wird "`if fremd`"
-Wendet man dieses Wissen an, so ergibt sich folgendes Bild
+Eine Besonderheit von einigen Programmiersprachen, wie auch Python, ist, dass man die obige Logik (z.b. "`if fremd == True`") auch versimplifiziert Darstellen kann. Aus "`if fremd == True`" wird "`if fremd`"
+Wendet man dieses Wissen an, so ergibt sich folgendes Bild:
 
 <iframe src="https://trinket.io/embed/python3/7185efd25c" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 
@@ -121,26 +123,14 @@ if not (beschädigt and zerstört):
 for-Loops
 Loops (Schleifen) wendet man an, wenn man Dinge mehrfach ausführen möchte. Als erstes lernt ihr nun die for-Schleife kennen. Diese wird benutzt, wenn der Code wiederholt ausgeführt werden soll - die Anzahl der Wiederholungen muss dabei vorgegeben sein.    
 
-Vorlesungen = ["Strafrecht I", "Staatsrecht I", "BGB I"]
-for x in Vorlesungen:
-print (x)
-#TODO: mit Ausgabe
+<iframe src="https://trinket.io/embed/python3/9378a02c9e" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
 
 range - Die Wiederholungen können auch mit Hilfe der range-Funktion ausgeführt werden. Wichtig ist dabei, dass man in der Informatik bei 0 anfängt zu zählen und nicht bei 1. 
 Hier ein kleines Beispiel: 
 
 <iframe src="https://trinket.io/embed/python3/4290e8d215" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 
-
-<iframe src="https://trinket.io/embed/python3/ce3f94eec3" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
-
-Ein Ausschnitt `help(range)`:
-
-> Return an object that produces a seqünce of integers from start (inclusive)
-> to stop (exclusive) by step. range(i, j) produces i, i+1, i+2, ..., j-1.
-> start defaults to 0, and stop is omitted! range(4) produces 0, 1, 2, 3.
-> These are exactly the valid indices for a list of 4 elements.
-> When step is given, it specifies the increment (or decrement).
 
 ## while loop
 

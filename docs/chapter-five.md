@@ -21,9 +21,9 @@ str = "eLegal Goettingen"
 print(str[1]) # L
 ```
 
-## Negatives Indizieren
+## Negatives Indexieren
 
-Analog ist auch negative Indizierung anwendbar.
+Analog ist auch negative Indexierung anwendbar.
 
 ```python
 str = "eLegal Goettingen"
@@ -32,9 +32,11 @@ print(str[-1]) # n
 
 ## Slicing
 
-Wie bei Listen ist der Doppelpunkt-Operator `:` auch mit Strings nutzbar.
+Der Doppelpunkt-Operator `:` ist unteranderem mit Strings nutzbar.
+Dabei stellt dieser sicher, dass nur innerhalb der Liste gesucht wird. 
 
-<iframe src="https://trinket.io/embed/python3/2f730f74fe" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+Probieren geht über studieren, du bist also wieder an der Reihe:
+<iframe src="https://trinket.io/embed/python3/2089a02b40" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 
 ## "In" Operator
 
