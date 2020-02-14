@@ -121,7 +121,9 @@ if not (beschädigt and zerstört):
 # Loops
 
 for-Loops
+```python
 Loops (Schleifen) wendet man an, wenn man Dinge mehrfach ausführen möchte. Als erstes lernt ihr nun die for-Schleife kennen. Diese wird benutzt, wenn der Code wiederholt ausgeführt werden soll - die Anzahl der Wiederholungen muss dabei vorgegeben sein.    
+```
 
 <iframe src="https://trinket.io/embed/python3/9378a02c9e" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 
@@ -134,7 +136,10 @@ Hier ein kleines Beispiel:
 
 ## while loop
 
-Im Gegensatz zu den for-loops wiederholen while-loops den Code so lange,bis die gegebene Bedingung nicht mehr erfüllt ist.   
+```python
+Im Gegensatz zu den for-loops wiederholen while-loops den Code so lange,bis die gegebene Bedingung nicht mehr wahr ist.  
+```
+Zur Veranschaulichung ein kleines Beispiel:
 
 ```python
 import time
@@ -145,22 +150,10 @@ condition = n < 50
 while condition:
     print(n)
     n += 5
-
-# T hat O beleidigt. Er hat eine Freiheitsstrafe von einem Jahr erhalten
-freiheitsstrafe_aktiv = True
-tag = 0
-
-entlassung = False
-
-while freiheitsstrafe_aktiv:
-    tag += 1 # T sitzt nun einen Tag ab
-    if tag >= 365 or entlassung():
-        break # bricht den loop ab
-    if tag < 365:
-        continue # springt direkt zur Anfangskondition
-
-print('Entlassen')
 ```
+
+<iframe src="https://trinket.io/embed/python3/8add3e4bd4" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
 
 ## Verschachtelte Schleifen
 

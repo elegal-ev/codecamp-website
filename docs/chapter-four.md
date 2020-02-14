@@ -6,7 +6,7 @@ sidebar_label: Listen
 
 ## Was ist eine Liste?
 
-Eine Liste ist eine geordnete Sammlung von Pythonobjekten
+Eine Liste ist eine geordnete Sammlung von Pythonobjekten.
 
 ```python
 jura_starter_kit = ["Bootsschuhe","Polohemd","Montblancstift"]
