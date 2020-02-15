@@ -153,7 +153,9 @@ Rechtsstudent R möchte nach seinem Studium gerne bei KPMG arbeiten. Er hat aber
 Berechne Rs Punkteschnitt wie folgt:
 
 <center>
-    <img src="/static/img/punkteschnitt.svg" alt="Punkteschnittformel" />
+<p>
+      Schnitt = (Note 1 + Note 2 + ... + Note n) / n
+</p>
 </center>
 
 <CodeBlock frame="https://trinket.io/embed/python3/0979992cbc">
@@ -233,14 +235,14 @@ print(x) # 18
 # Strings koennen auch mit '+' verkettet werden.
 print(s + " ist toll.") # Roxin ist toll.
 # Es ist auch moeglich mehrere Variablen gleichzeitig zuzuweisen
-x, y, z = "Puppe", "Duttge", "Ambos"
+x, y, z = "Puppe", "Duttge", "Amboss"
 print(x) # Puppe
 print(y) # Duttge
-print(z) # Ambos
+print(z) # Amboss
 x = y = z
-print(x) # Ambos
-print(y) # Ambos
-print(z) # Ambos
+print(x) # Amboss
+print(y) # Amboss
+print(z) # Amboss
 ```
 
 </CodeBlock>

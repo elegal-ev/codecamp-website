@@ -136,13 +136,15 @@ print(regler[-1])
 Zudem gibt es viele praktische Funktionen für Listen!
 
 - `append`:
-  Die Funktion `append()` fügt der Liste am Ende ein neues Element hinzu.
-  Hier ein kleines Beispiel: 
+Die Funktion `append()` fügt der Liste am Ende ein neues Element hinzu.
+Hier ein kleines Beispiel: 
 
-  Vorlesungen = ["Strafrecht I", "Staatsrecht I", "BGB I"]
-  Vorlesungen.append("Römische Rechtsgeschichte")
-  print(Vorlesungen)
-  #TODO: Umwandeln in Ausgabe
+```python 
+Vorlesungen = ["Strafrecht I", "Staatsrecht I", "BGB I"]
+Vorlesungen.append("Römische Rechtsgeschichte")
+
+print(Vorlesungen)
+```
 
 <CodeBlock frame="https://trinket.io/embed/python3/8008720569">
 
