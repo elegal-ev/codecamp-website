@@ -14,6 +14,7 @@ export default class CodeBlock extends React.Component {
                     ]
                 }>
                 <TabItem value="repl">
+
                     <iframe src={this.props.frame} width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
                 </TabItem>
                 <TabItem value="py">
