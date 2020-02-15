@@ -4,6 +4,8 @@ title: Codingeinheit 6 - Klassen und Module
 sidebar_label: Klassen und Module
 ---
 
+import CodeBlock from './CodeBlock';
+
 # Module
 
 In der Programmierung gibt es oft Probleme, die man in jedem Projekt hat (Erstellen von Dateien, Kommunikation über Internet). Um den Code wiederzuverwenden, kann man diese in sogenannte Module (Libraries) zusammenfassen. In Python sind diese Module einfach nur eine Textdatei oder ein Ordner an Textdateien
@@ -14,7 +16,15 @@ Wir speichern diesen Codeabschnitt in `mein_modul.py`.
 
 Jetzt koennen wir diesen Code aus einer anderen Datei im gleichen Verzeichnis einfach importieren.
 
-<iframe src="https://trinket.io/embed/python3/1e5927079b" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+<CodeBlock frame="https://trinket.io/embed/python3/1e5927079b">
+​
+```python
+import mein_modul
+mein_modul.elegal()
+```
+​
+</CodeBlock>
+
 
 > **Beachte:** Hierbei steht `mein_modul.elegal()` für "Die Funktion namens `elegal`, welche du unter `mein_modul` gefunden hast".
 
@@ -200,7 +210,27 @@ Zuletzt ist es noch sinnvoll, dass das printen wie erwartet klappt.
 Wie wir bereits gelernt haben, sind Funktionen wie `__init__` von Python selbst gestellte Funktionen.
 Zum printen von Funktionen gibt es nun die von Python gestellte `__str__`, welche man einfach definieren muss. Beispiel:
 
-<iframe src="https://trinket.io/embed/python3/93841f6c32" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+<CodeBlock frame="https://trinket.io/embed/python3/93841f6c32">
+
+```python
+class Person:
+    def __init__(self, vorname, nachname, alter):
+        self.vorname = vorname
+        self.nachname = nachname
+        self.alter = alter
+
+    # Coole weitere Funktionen
+    # ...
+
+    def __str__(self):
+        string_zur_ausgabe = self.vorname + " " + self.nachname + ": " + str(self.alter) + " Jahre alt."
+        return string_zur_ausgabe
+
+john = Person("John", "Doe", 36)
+print(john)
+```
+
+</CodeBlock>
 
 ### Beispiele
 
