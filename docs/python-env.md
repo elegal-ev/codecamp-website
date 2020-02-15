@@ -33,15 +33,4 @@ Damit der Editor auch vernünftig mit Python umgehen kann, fügen wir noch die P
 
 <img src="https://raw.githubusercontent.com/elegal-ev/codecamp-website/1e3250f3c006f1b29b2078dcbfe1842de8ba39ae/static/img/install_python_extensions.gif" alt="bild" />
 
-
-### Installieren von Python Modulen
-
-TODO
-- Virtualenv?
-
-### Ausführen eines Python Skripts in VS Code
-
-TODO
-- Video
-
-So, das wars auch schon. Ab jetzt bist du startklar! 🚀
+<!-- So, das wars auch schon. Ab jetzt bist du startklar! 🚀 -->
