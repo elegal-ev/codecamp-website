@@ -25,7 +25,18 @@ Beispiel
 <CodeBlock frame="https://trinket.io/embed/python3/6921349f7d">
 
 ```python
-# TODO
+# Hallo liebe Kursteilnehmer
+# Das hier ist ein Kommentar
+# Ein Kommentar wird von dem Interpreter ignoriert
+# Der Interpreter ist das Ding, das deinen Code quasi ausführt
+# Kommentierter Code wird mit einem "#" gekennzeichnet
+# Will man mehrere Zeilen kommentieren, benutzt man das """ oder '''
+
+'''
+Das hier ist ein praktisches 
+Beispiel
+'''
+
 ```
 
 </CodeBlock>
@@ -46,7 +57,9 @@ print("Ich 'bin' interaktiv!")
 <CodeBlock frame="https://trinket.io/embed/python3/675bec830e">
 
 ```python
-# TODO
+print('Ich "bin" interaktiv!')
+print("Ich 'bin' interaktiv!")
+
 ```
 
 </CodeBlock>
@@ -60,7 +73,7 @@ print("Hiermit kann man mehrere " + "Strings verbinden")
 <CodeBlock frame="https://trinket.io/embed/python3/8dbb11f9c0">
 
 ```python
-# TODO
+print("Hiermit kann man mehrere " + "Strings verbinden")
 ```
 
 </CodeBlock>
@@ -72,7 +85,22 @@ Mit der Funktion `print()` können Strings in der Konsole wiedergegeben werden.
 <CodeBlock frame="https://trinket.io/embed/python3/abce55fd39">
 
 ```python
-# TODO
+from elegal_assert import *
+# Dieses Statment kannst du einfach ignorieren
+
+# Probiere es doch einmal selber
+# Sorge dafür, dass das Programm "eLegal ist toll!" ausgibt.
+
+#-----------
+x = "hier kommt dein Text rein"
+print(x)
+#-----------
+
+
+
+
+
+testat_string(x)
 ```
 
 </CodeBlock>
@@ -94,7 +122,12 @@ print(11 % 5)
 <CodeBlock frame="https://trinket.io/embed/python3/c0270b5fd3">
 
 ```python
-# TODO
+print(5 + 2)
+print(5 - 2)
+print(14 / 2)
+print(2 ** 3)
+print(11 % 5)
+
 ```
 
 </CodeBlock>
@@ -110,7 +143,8 @@ print("1" + "1")
 <CodeBlock frame="https://trinket.io/embed/python3/f5777c34bc">
 
 ```python
-# TODO
+print(1 + 1)
+print("1" + "1")
 ```
 
 </CodeBlock>
@@ -125,7 +159,16 @@ Berechne Rs Punkteschnitt wie folgt:
 <CodeBlock frame="https://trinket.io/embed/python3/0979992cbc">
 
 ```python
-# TODO
+from elegal_assert import *
+# Berechne den Schnitt aus diesen drei Noten
+Klausurenschnitt = 6 + 7 + 8
+
+x = "ersetze diesen String mit der Rechnung. Tipp, verwende die Variable Klausurenschnitt"
+
+
+# --- Verfifikation ---
+# --- diesen Code NICHT modifizieren! ---
+klausurenschnitt_check(x)
 ```
 
 </CodeBlock>
@@ -137,7 +180,11 @@ Um Datentypen zu verbinden, muss man diese vorher umwandeln. Deswegen ist folgen
 <CodeBlock frame="https://trinket.io/embed/python3/0834f18005">
 
 ```python
-# TODO
+# Don't
+print("Ich habe " + 5 + " Schönfelder")
+
+# Do
+print("Ich habe " + str(5) + " Schönfelder")
 ```
 
 </CodeBlock>
@@ -156,7 +203,14 @@ Irgendwas funktioniert hier jedoch nicht so richtig. Evtl. Kannst du ihm ja helf
 <CodeBlock frame="https://trinket.io/embed/python3/8abfb712dc">
 
 ```python
-# TODO
+# Kostenrechner:
+zwei_stunden = 200
+schriftsatz_pauschale = "500"
+
+kosten = zwei_stunden + schriftsatz_pauschale
+print(kosten)
+# Führe das Programm doch einmal aus und korrigiere es anhand der Fehlermeldung
+# Wenn kein Fehler kommt, und eine Ausgabe erscheint, hast du alles richtig gemacht
 ```
 
 </CodeBlock>
@@ -167,7 +221,26 @@ Variablen werden genutzt um auf Werte zu verweisen. Der Vorteil bei deren Verwen
 <CodeBlock frame="https://trinket.io/embed/python3/d4121f4c92">
 
 ```python
-# TODO
+x = 3 # Eine Variable x, welche den Integer 3 haelt
+s = "Roxin" # Eine Variable s, welche den String 'Roxin' haelt
+y = 7
+print(x + y) # 10, das Ergebnis der Addition wird ausgegeben
+print(x) # 3, die Variable x hat ihren Wert nicht geaendert!
+z = x + y # das Ergebnis der Operation wird in z festgehalten
+print(z) # 10
+x = 18 # x wird ein neuer Wert zugewiesen; 3 -> 18 !
+print(x) # 18
+# Strings koennen auch mit '+' verkettet werden.
+print(s + " ist toll.") # Roxin ist toll.
+# Es ist auch moeglich mehrere Variablen gleichzeitig zuzuweisen
+x, y, z = "Puppe", "Duttge", "Ambos"
+print(x) # Puppe
+print(y) # Duttge
+print(z) # Ambos
+x = y = z
+print(x) # Ambos
+print(y) # Ambos
+print(z) # Ambos
 ```
 
 </CodeBlock>
