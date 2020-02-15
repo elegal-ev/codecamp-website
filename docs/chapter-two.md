@@ -18,9 +18,9 @@ Hierbei stellen die Leerzeichen vor den `print()`-Befehlen dar, was zur Funktion
 
 Genauso wie bei `print` wird diese einfach mit `()` aufgerufen:
 
-<iframe src="https://trinket.io/embed/python3/c02faf14ad" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+<iframe src="https://trinket.io/embed/python3/558f1ea49f" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 
-Die Funktion ihren Inhalt an die Stelle in den Code, an der wie sie aufrufen.
+Die Funktion kopiert ihren Inhalt an die Stelle in den Code, an der wie sie aufrufen.
 Der grade eben genutze Code ist also äquivalent zu dem unten stehenden.
 
 <iframe src="https://trinket.io/embed/python3/c4089e331f" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
@@ -29,7 +29,7 @@ Der grade eben genutze Code ist also äquivalent zu dem unten stehenden.
 
 Schreibe eine Funktion, welche "eLegal ist toll" ausgibt und nenne sie "eLegal"
 
-<iframe src="https://trinket.io/embed/python3/2c9d4d2a9f" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+<iframe src="https://trinket.io/embed/python3/82d519f1d3" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 
 ## Parameter
 
@@ -41,13 +41,20 @@ Anwalt A hat in seiner Kanzelei zahlreiche Mandanten, die er taeglich mit einer 
 
 Gott sei Dank gibt es hierfuer Funktionsargumente!
 
-<iframe src="https://trinket.io/embed/python3/2dee8a1377" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+Verwirrenderweise wird oft zwischen "Parametern" und "Argumenten" unterschieden.
+Bei Parametern handelt es sich um die Werte, welche beim erstmaligen definieren der Funktion oben angegeben werden. Beispielsweise ist "name" in der Funktion "gruss" unten ein Parameter. 
+Bei Argumenten handelt es sich um die Daten, mit der mann die Funktion in der Ausführung dann aufruft. 
+z.B. gruss("eLegal") - hier wäre eLegal ein Funktionsargument.
+
+<iframe src="https://trinket.io/embed/python3/b4b47cdb96" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 
 ## Schlüsselwortargument
 
-Schlüsselwortargumente werden verwendet um Argumenten einen Standardwert zuzuweisen
+Schlüsselwortargumente werden verwendet um Parametern einen Standardwert zuzuweisen.
+Konkret bedeutet dies, dass die Funktion den Standardwert verwendet, außer man übergibt ein Funktionsargument.
+In diesem Fall wird der Standardwert überschrieben.
 
-<iframe src="https://trinket.io/embed/python3/1c4fe7bbcf" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+<iframe src="https://trinket.io/embed/python3/9918335033" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 
 Dies führt dazu, dass no_keyword nicht ohne ein Parameter aufgerufen werden kann.
 `yes_keyword` hingegen schon
@@ -64,7 +71,7 @@ yes_keyword("Neuer Parameter")
 
 Damit die Ergebnisse deiner Funktion nicht nach dem printen verloren gehen, gibt es das sogenannte `return`-Schlüsselwort
 
-<iframe src="https://trinket.io/embed/python3/1bd72b36b7" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+<iframe src="https://trinket.io/embed/python3/c297ecd204" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 
 Versuch einfach mal das obige Beispiel so zu veraendern, dass die Funktion die eingegebene Zahl mal sich selbst nimmt!
 
@@ -97,3 +104,5 @@ Jemand außerhalb des bayrischen Anwendungsbereiches kann dies nicht. Denn er we
 Probiere, zur Veranschaulichung, die Ausführung folgenden Codes. Er sollte eine Fehlermeldung hervorrufen.
 
 <iframe src="https://trinket.io/embed/python3/3f7c08ce46" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
+Auf die bayrische_begruessung kann nämlich nur innerhalb der Funktion zugegriffen werden.

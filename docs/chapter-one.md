@@ -4,6 +4,8 @@ title: Codingeinheit 1 - Die Grundlagen
 sidebar_label: Grundlagen
 ---
 
+import CodeBlock from './CodeBlock';
+
 # Comments, Syntax
 
 ```python
@@ -20,18 +22,34 @@ Beispiel
 '''
 ```
 
-<iframe src="https://trinket.io/embed/python3/6921349f7d" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+<CodeBlock frame="https://trinket.io/embed/python3/6921349f7d">
+
+```python
+# TODO
+```
+
+</CodeBlock>
+
+Kommentare werden genutzt, um Informationen im Code zu platzieren, ohne, dass diese vom eigentlichen Programm ausgeführt werden. 
+Dies ist hilfreich um das Lesen des Codes zu vereinfachen, sowie eine etwaige Wartung zu erleichtern.
 
 ## Strings
 
 Als Strings (🎻) bezeichnet man Zeichenketten, hierbei ist es wichtig, dass diese entweder innerhalb von `'` oder `"` ist.
+Strings werden immer dann genutzt, wenn man in irgendeiner Form Textzeichen benötigt. Dies kann, beispielsweise, der Fall beim versenden von Informationen sein, oder auch bei der Ausgabe von Informationen.
 
 ```python
 print('Ich "bin" interaktiv!')
 print("Ich 'bin' interaktiv!")
 ```
 
-<iframe src="https://trinket.io/embed/python3/675bec830e" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+<CodeBlock frame="https://trinket.io/embed/python3/675bec830e">
+
+```python
+# TODO
+```
+
+</CodeBlock>
 
 Zudem kann man Strings mit einem `+` verbinden
 
@@ -39,13 +57,25 @@ Zudem kann man Strings mit einem `+` verbinden
 print("Hiermit kann man mehrere " + "Strings verbinden")
 ```
 
-<iframe src="https://trinket.io/embed/python3/8dbb11f9c0" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+<CodeBlock frame="https://trinket.io/embed/python3/8dbb11f9c0">
+
+```python
+# TODO
+```
+
+</CodeBlock>
 
 ## print
 
-Mit der Funktion `print()` können unteranderem Strings wiedergegeben werden.
+Mit der Funktion `print()` können Strings in der Konsole wiedergegeben werden.
 
-<iframe src="https://trinket.io/embed/python3/0cf9c578af" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+<CodeBlock frame="https://trinket.io/embed/python3/abce55fd39">
+
+```python
+# TODO
+```
+
+</CodeBlock>
 
 ## Integers
 
@@ -54,24 +84,36 @@ Neben Strings (Zeichenketten) sind Integer (Ganzzahlen) wichtig. Für diese gibt
 ## Arithmetische Operationen
 
 ```python
-print(5 + 2) # 7
-print(5 - 2) # 3
-print(14 / 2) # 7
-print(2 ^ 3) # 8
-print(11 % 5) # 1
+print(5 + 2)
+print(5 - 2)
+print(14 / 2)
+print(2 ^ 3)
+print(11 % 5)
 ```
 
-<iframe src="https://trinket.io/embed/python3/469984674c" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+<CodeBlock frame="https://trinket.io/embed/python3/c0270b5fd3">
+
+```python
+# TODO
+```
+
+</CodeBlock>
 
 Das `%` steht für den ganzzahligen Rest einer Division.
 Hierbei ist es ganz wichtig, dass die Zahlen nicht in Anführungszeichen sind, da sonst wie oben diese einfach nur hintereinandergeschrieben werden
 
 ```python
-print(1 + 1) # 2
-print("1" + "1") # 11
+print(1 + 1)
+print("1" + "1")
 ```
 
-<iframe src="https://trinket.io/embed/python3/d4dffc78fa" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+<CodeBlock frame="https://trinket.io/embed/python3/f5777c34bc">
+
+```python
+# TODO
+```
+
+</CodeBlock>
 
 Rechtsstudent R möchte nach seinem Studium gerne bei KPMG arbeiten. Er hat aber gehört, dass er hier für einen guten Schnitt von mindestens 8 Punkten benötigt.
 Berechne Rs Punkteschnitt wie folgt:
@@ -80,13 +122,25 @@ Berechne Rs Punkteschnitt wie folgt:
     <img src="/static/img/punkteschnitt.svg" alt="Punkteschnittformel" />
 </center>
 
-<iframe src="https://trinket.io/embed/python3/afa82f47bf" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+<CodeBlock frame="https://trinket.io/embed/python3/0979992cbc">
+
+```python
+# TODO
+```
+
+</CodeBlock>
 
 ## Datentypen
 
 Um Datentypen zu verbinden, muss man diese vorher umwandeln. Deswegen ist folgendes ungültig:
 
-<iframe src="https://trinket.io/embed/python3/0834f18005" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+<CodeBlock frame="https://trinket.io/embed/python3/0834f18005">
+
+```python
+# TODO
+```
+
+</CodeBlock>
 
 <center>
     <img alt="witzige eLegal Meme" src="https://i.imgflip.com/3bz63n.jpg" />
@@ -99,14 +153,23 @@ Irgendwas funktioniert hier jedoch nicht so richtig. Evtl. Kannst du ihm ja helf
 
 > Tipp: Nutze hierfür die von Python gegebenen Fehlermeldungen!
 
-<iframe src="https://trinket.io/embed/python3/3db81e2e07" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+<CodeBlock frame="https://trinket.io/embed/python3/8abfb712dc">
+
+```python
+# TODO
+```
+
+</CodeBlock>
 
 ## Variablen
+Variablen werden genutzt um auf Werte zu verweisen. Der Vorteil bei deren Verwendung ist, dass man die Werte nicht jedes mal neu schreiben muss, sondern eine einmal deklarierte Variable beliebig oft verwenden kann.
 
-<iframe src="https://trinket.io/embed/python3/d4121f4c92" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+<CodeBlock frame="https://trinket.io/embed/python3/d4121f4c92">
 
-## Division
+```python
+# TODO
+```
 
-<iframe src="https://trinket.io/embed/python3/d0a38d0c61" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+</CodeBlock>
 
-> ⚠️ Hierbei ist zu beachten, dass Dezimalzahlen mit einem Punkt statt einem Komma getrennt werden!
+Jedes mal, wenn wir hier eine der Variablen verwenden, wird die Variable quasi, durch den ihr zugewiesenen Wert, ersetzt.
