@@ -83,10 +83,6 @@ Als Beispiel:
 
 Natürlich kann ein Dictionary auch mehrere Key-Value-Paare haben.
 
-```python
-
-```
-
 Hierbei können unter anderem auch Listen als **Value** in einem Dictionary verwendet werden. Value eines Dictionaries kann auch erneut ein Dictionary sein.
 
 <iframe src="https://trinket.io/embed/python3/c6e483f61f" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
