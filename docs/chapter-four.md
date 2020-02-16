@@ -27,9 +27,9 @@ print(verschiedenes[0])
 
 **Achtung!** In der IT Welt fängt man mit dem Zählen bei 0 und nicht bei 1 an.
 
-Probier es einmal selber und wähle "JURA" aus der unten stehenden Liste aus
+Probier es einmal selber und wähle "JURA" aus der unten stehenden Liste aus:
 
-<iframe src="https://trinket.io/embed/python3/f2dab5db55" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+<iframe src="https://trinket.io/embed/python3/f3f3b904b8" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 
 Zuletzt können Listen auch mit dem `+`-Operator verbunden werden. 
 
@@ -37,11 +37,11 @@ Zuletzt können Listen auch mit dem `+`-Operator verbunden werden.
 
 ## Listen und Schleifen
 
-Listen kann man auch wie folgt auf `for`-Schleifen anwenden
+Listen kann man auch wie folgt auf `for`-Schleifen anwenden:
 
 <iframe src="https://trinket.io/embed/python3/c16796572d" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 
-Hierbei kann man sich gesondert `range()` angucken. Dies ist zwar intern keine Liste, aber kann einfach zu einer gemacht werden, indem man hierauf die `list()`-Funktion anwendet
+Hierbei kann man sich gesondert `range()` angucken. Die range()-Funktion gibt Objekte wie bspw. Zahlen oder Wörter in einer bestimmten Reihenfolge, automatisch beginnend bei 0 in einer Schritten und endend bei einer benutzerspezifisch vorgegebenen Zahl, wieder. Dies ist zwar intern keine Liste, aber kann einfach zu einer gemacht werden, indem man hierauf die `list()`-Funktion anwendet.
 
 <iframe src="https://trinket.io/embed/python3/6ddb5efe24" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 
@@ -67,12 +67,11 @@ Zudem gibt es viele praktische Funktionen für Listen!
 
 - `append`:
   Die Funktion `append()` fügt der Liste am Ende ein neues Element hinzu.
-  Hier ein kleines Beispiel: 
+  Hier ein kleines Beispiel um dich damit vertraut zu machen: 
 
-  Vorlesungen = ["Strafrecht I", "Staatsrecht I", "BGB I"]
-  Vorlesungen.append("Römische Rechtsgeschichte")
-  print(Vorlesungen)
-  #TODO: Umwandeln in Ausgabe
+<iframe src="https://trinket.io/embed/python3/5a183d91ca" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
+Und jetzt etwas, für Weggeschrittene:
 
 <iframe src="https://trinket.io/embed/python3/8008720569" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 
@@ -107,7 +106,7 @@ Zudem gibt es noch viele weitere Methoden, allgemein lohnt es sich immer einfach
 
 ## Verschachtelte Listen
 
-Zudem können Listen intuitiv verschachtelt werden, sprich Listen können auch Elemente einer Liste sein.
+Zudem können Listen intuitiv verschachtelt werden, oder anders ausgedrückt, Listen können auch Elemente einer Liste sein.
 
 <iframe src="https://trinket.io/embed/python3/4f3390b261" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 
@@ -124,6 +123,6 @@ Hier ein Beispiel:
 
 <iframe src="https://trinket.io/embed/python3/df6baad41e" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 
-Diese List Erstellung kann auch mit einer Bedingung verbunden werden
+Diese List Erstellung kann auch mit einer Bedingung verbunden werden.
 
 <iframe src="https://trinket.io/embed/python3/1012f1ddf5" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
