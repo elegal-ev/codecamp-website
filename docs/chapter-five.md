@@ -40,7 +40,10 @@ Probieren geht über studieren, du bist also wieder an der Reihe:
 
 ## "In" Operator
 
-Mit dem `in` Keyword lässt sich feststellen, ob eine bestimmte Zeichenfolge in einem String enthalten ist
+Mit dem `in` Keyword lässt sich feststellen, ob eine bestimmte Zeichenfolge in einem String enthalten ist.
+
+Kleiner Exkurs zu dem Thema `Keyword` :
+In Python gibt es bestimmte Begriffe, also `Keywords`, welche eine feststehende Bedeutung und eine damit einhergehende Funktion innehaben, so wie die uns schon bekannten Operatoren `True` und `False`. Es ist nicht möglich, diese `Keywords` anderweitig zu verwenden, wie bspw. eine Funktion mit einem `Keyword` zubenennen. 
 
 <iframe src="https://trinket.io/embed/python3/b4267dc7a1" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 
@@ -64,7 +67,7 @@ Der Folgende String ist nicht sehr übersichtlich, wenn man ihn ausgibt. Füge d
 - `upper()` konvertiert den String zu GROSSBUCHSTABEN
 - `lower()` konvertiert den String zu Kleinbuchstaben
 - `count(char)` Zählt die Buchstaben in einem String
-- `len()` Gibt die Menge an Buchstaben zurück
+- `len()` Gibt die Menge der Buchstaben zurück
 
 <iframe src="https://trinket.io/embed/python3/121fc6d856" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 
@@ -76,7 +79,7 @@ Mit der `format` Funktion kann man _Werte_, die eingesetzt werden sollen, templa
 
 # Dictionaries
 
-Ein `dict` ist eine **Key-Value**-Datenstruktur mit der Syntax `{bezeichner : wert_hinter_dem_bezeichner}`.
+Ein `dict` ist eine **Key-Value**-Datenstruktur mit der Syntax `{bezeichner : wert_hinter_dem_bezeichner}`. Das bedeutet, erinnert euch an `Keywords`, dass jedem **Key** (Schlüssel(wort)) ein **Value** (Wert oder Bedeutung) zugeordnet wird. 
 Als Beispiel:
 
 <iframe src="https://trinket.io/embed/python3/4157184884" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
