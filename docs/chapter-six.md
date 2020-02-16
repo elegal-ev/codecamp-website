@@ -8,13 +8,13 @@ import CodeBlock from './CodeBlock';
 
 # Module
 
-In der Programmierung gibt es oft Probleme, die man in jedem Projekt hat (Erstellen von Dateien, Kommunikation über Internet). Um den Code wiederzuverwenden, kann man diese in sogenannte Module (Libraries) zusammenfassen. In Python sind diese Module einfach nur eine Textdatei oder ein Ordner an Textdateien
+Auch in der Programmierung gibt es oft Probleme, die man in jedem Projekt hat (Erstellen von Dateien, Kommunikation über das Internet). Um den Code wiederzuverwenden, welchen man zuvor geschrieben hat, kann man diesen in sogenannte Module (Libraries) zusammenfassen. In Python sind diese Module einfach nur eine Textdatei oder ein Ordner an Textdateien, welche einfach nur mit dem Zusatz **.py** gespeichert werden müssen.
 
-Wir erstellen um dieses Beispiel zu veranschaulichen ein Modul, welches zwei Funktionen enthalten, welche etwas ausgeben.
+Wir erstellen, um dieses Beispiel zu veranschaulichen, ein Modul, welches zwei Funktionen enthält.
 
 Wir speichern diesen Codeabschnitt in `mein_modul.py`.
 
-Jetzt koennen wir diesen Code aus einer anderen Datei im gleichen Verzeichnis einfach importieren.
+Jetzt können wir diesen Code aus einer anderen Datei im gleichen Verzeichnis einfach importieren.
 
 <CodeBlock frame="https://trinket.io/embed/python3/1e5927079b">
 ​
@@ -32,13 +32,13 @@ mein_modul.elegal()
 
 ## Import unter anderen Namen
 
-Nehmen wir folgendes an, wir wollen die Funktion aus der Datei `liste_aller_praezedenzfaelle_der_letzten_zwanzig_jahre.py`.
+Nehmen wir folgendes an: Wir wollen die Funktion aus der Datei `liste_aller_praezedenzfaelle_der_letzten_zwanzig_jahre.py` aufrufen.
 
-Um hier nicht immer den Namen auszuschreiben, gibt es zwei Moeglichkeiten:
+Um hier nicht immer den Namen auszuschreiben, gibt es zwei Möglichkeiten:
 
 ## Unter anderen Namen importieren
 
-Hierfür gibt es `as`-Schlüsselwort in Python.
+Hierfür gibt es das `as`-Schlüsselwort in Python.
 
 ```python
 import liste_aller_praezedenzfaelle_der_letzten_zwanzig_jahre as liste
@@ -49,7 +49,7 @@ liste.funktion()
 
 ## Ohne Namen importieren
 
-Hierfür gibt es das `from`-Schlüsselwort in Python, womit man einzelne Methoden importiert. Danach kann man diese wie die Standardmethoden ohne Modulnamen aufrufen.
+Hierfür gibt es das `from`-Schlüsselwort in Python, womit man einzelne Methoden importiert. Danach kann man diese, wie die Standardmethoden, ohne Modulnamen aufrufen.
 
 ```python
 from mein_modul import elegal
@@ -57,7 +57,7 @@ from mein_modul import elegal
 elegal() # Elegal ist super!
 ```
 
-Hierbei haben wir einfach die Funktion `elegal` importiert, nicht `kpmg`. Wenn man alles importieren will, schreibt man einfach
+Hierbei haben wir einfach die Funktion `elegal` importiert, nicht `kpmg`. Wenn man alles importieren will, schreibt man einfach,
 
 ```python
 from mein_modul import *
@@ -70,7 +70,7 @@ wobei der `*` für "alles" steht.
 ## Herleitung
 
 Betrachten wir folgendes Problem: Wir wollen eine Funktion schreiben, welche den Wert eines beliebigen Autos anhand dessen Attribute berechnet.
-Hier sei der Preis abhaengig von
+Hier sei der Preis abhängig von
 
 - Baujahr des Autos
 - Kaufpreis im Jahre des Baujahrs
@@ -79,7 +79,7 @@ Hier sei der Preis abhaengig von
 - Extraausstattungen
 - Unfallfrei
 
-Dies würde im Code wiefolgt aussehen:
+Dies würde im Code wie folgt aussehen:
 
 ```python
 def wert_rechner(baujahr, kaufpreis, marke, modell, ausstattung, unfallfrei):
@@ -103,20 +103,20 @@ Hier fallen direkt 3 Probleme auf:
 2. Man wiederholt sich sehr oft
 3. Es ist einfach aus Versehen eine Eigenschaft zu vergessen
 
-Um diese Probleme zu loesen, gab es viele Ansaetze, wovon das meist genutzte die "Objektorientierte Programmierung" ist.
+Um diese Probleme zu lösen gab es viele Ansätze, wovon der meist genutzte die "Objektorientierte Programmierung" ist.
 
 ## Klassen und Objekte
 
-Um Probleme der reellen Welt in Code zu abstrahieren, bietet es sich an, hier auch mit einem Auto, statt mit einer Liste an Werten, zu arbeiten.
+Um Probleme der reellen Welt in Code zu abstrahieren bietet es sich an, hier auch mit einem Auto, statt mit einer Liste an Werten zu arbeiten.
 
-Und genau dies sind Klassen und Objekte. Hier ist eine Klasse "Auto" quasi der "Bauplan" für Autos, welcher definiert, was genau ein Auto hat.
+Und genau dies sind Klassen und Objekte. Hier ist eine Klasse "Auto" quasi der "Bauplan" für Autos, welcher definiert, aus was sich ein Auto zusammensetzt.
 
-Nach obigen überlegungen müssen wir nur noch definieren, wie genau der Bauplan ein Auto erstellen soll:
+Nach obigen Überlegungen müssen wir nur noch definieren, wie genau der Bauplan ein Auto erstellen soll:
 
 ```python
 Bauplan Auto:
     Erstellung des Autos:
-    (Hierfür benoetige ich Baujahr, Kaufpreis, Marke, Modell,
+    (Hierfür benötige ich Baujahr, Kaufpreis, Marke, Modell,
       Extraausstattungen und ob es unfallfrei ist.)
 
     Setze fest, dass bei diesem Auto das Baujahr das übergebene Baujahr ist.
@@ -127,7 +127,7 @@ Bauplan Auto:
 Bauplan Ende.
 ```
 
-Hierfür sieht der Pythoncode sehr aehnlich aus:
+Hierfür sieht der Pythoncode sehr ähnlich aus:
 
 ```python
 class Auto:
@@ -140,13 +140,13 @@ class Auto:
         self.unfallfrei = unfallfrei
 ```
 
-Auch wenn das meiste selbsterklaerend sein sollte, hier doch noch 1-2 Dinge:
+Auch wenn das meiste selbsterklärend sein sollte, hier doch noch ein paar Hinweise:
 
 - `class` beschreibt, dass eine Klasse beginnt, genau so wie `def` eine Funktion.
-- `self` bedeutet, dass es auf die das Objekt des Bauplans (hier das einzelne Auto) bezogen ist. Mehr hierzu spaeter.
+- `self` bedeutet, dass es auf das Objekt des Bauplans (hier das einzelne Auto) bezogen ist. Mehr hierzu später.
 - `__init__` ist ein von Python festgelegter Name. Dieser kommt von "initialisation" und wird bei der Erstellung aufgerufen. Allgemein als Richtlinie gilt: `__funktionsname__` ist eine interne Funktion.
 
-Nun koennen wir unser erstes Auto erstellen! und dann einfach mit `autoobjekt.information` diese Aufrufen!
+Nun können wir unser erstes Auto erstellen! Und dann einfach mit `autoobjekt.information` diese Aufrufen!
 
 ```python
 auto_zum_verkauf = Auto(2019, 50000, "Audi", "A4", "", True)
@@ -158,13 +158,13 @@ print("Das Auto ist ein " + auto_zum_verkauf.marke
 
 Hierbei ist `auto_zum_verkauf` unser Autoobjekt.
 
-Nun koennen wir **ENDLICH** unsere Methode schoener schreiben!
+Nun können wir **ENDLICH** unsere Methode schöner schreiben!
 
 ```python
 def wert_rechner(auto):
     letzter = letzter_verkaufswert(auto)
 
-    maximal = hoechster_verkaufswert(auto)
+    maximal = höchster_verkaufswert(auto)
 
     minimal = niederigster_verkaufswert(auto)
 
@@ -178,16 +178,16 @@ def wert_rechner(auto):
 
 ## Objektmethoden
 
-Wenn man weiter an Objekte in der reellen Welt denkt, kann man Funktionen in 2 Kategorien aufteilen:
+Wenn man weiter an Objekte in der reellen Welt denkt, kann man Funktionen in zwei Kategorien aufteilen:
 
-- Dinge die an dem Auto selbst passieren (fahren, bremsen) (Objektmethode)
-- Dinge wofür ein Auto gebraucht wird (Belegen eines Parkplatzes) (Normale Funktion)
+- Dinge, die an dem Auto selbst passieren (fahren, bremsen) (Objektmethode)
+- Dinge, für die ein Auto gebraucht wird (Belegen eines Parkplatzes) (Normale Funktion)
 
-Objektmethoden zeichnen sich dadurch aus, dass sie kein Sinn hat, diese ohne das Objekt aufzurufen. Es ist halt nicht moeglich, ein Auto zu fahren, welches nicht existiert.
+Objektmethoden zeichnen sich dadurch aus, dass es keinen Sinn hat, diese ohne das Objekt aufzurufen. Es ist nicht möglich, ein Auto zu fahren, welches nicht existiert.
 
 In Python schreibt man Objektmethoden in Klassen selbst, wofür das oben benannte `self` dafür steht, dass es sich auf das eigene Objekt bezieht.
 
-Als Beispiel nun mit der Methode `unfall_baün`, welche als Folge unfallfrei auf falsch setzt.
+Als Beispiel nun mit der Methode `unfall_bauen`, welche als Folge unfallfrei auf falsch setzt.
 
 ```python
 class Auto:
@@ -234,7 +234,7 @@ print(john)
 
 ### Beispiele
 
-So würde man z.B. ein Verein definieren
+So würde man z.B. einen Verein definieren:
 
 ```python
 class Verein:
@@ -248,9 +248,9 @@ class Verein:
         self.vorsitzender = vorsitzender
 
     # Hier wird eine Person als neues_mitglied erwartet
-    # Dies ist eine Objektmethode, da es am Verein selbst passiert.
-    # Beachte: Der Print von neues Mitglied klappt nur,
-    # da __str__ hierfuer definiert ist.
+    # Dies ist eine Objektmethode, da es im Verein selbst passiert.
+    # Beachte: Der print von neues Mitglied klappt nur,
+    # da __str__ hierfür definiert ist.
     def mitglied_beitritt(self, neues_mitglied):
         self.mitglieder.append(neues_mitglied)
         print("Neues Mitglied!")
