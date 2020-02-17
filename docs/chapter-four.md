@@ -122,12 +122,22 @@ Zudem gibt es viele praktische Funktionen für Listen!
   Die Funktion `append()` fügt der Liste am Ende ein neues Element hinzu.
   Hier ein kleines Beispiel um dich damit vertraut zu machen: 
 
-<iframe src="https://trinket.io/embed/python3/5a183d91ca" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
+<CodeBlock frame="https://trinket.io/embed/python3/5a183d91ca">
+
+```python
+Vorlesungen = ["Strafrecht I", "Staatsrecht I", "BGB I"]
+
+Vorlesungen.append("Römische Rechtsgeschichte")
+
+print(Vorlesungen)
+```
+
+</CodeBlock>
 
 Und jetzt etwas, für Weggeschrittene:
 
 print(Vorlesungen)
-```
 
 <CodeBlock frame="https://trinket.io/embed/python3/8008720569">
 
