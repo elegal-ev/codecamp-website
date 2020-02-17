@@ -4,7 +4,7 @@ title: Intro
 sidebar_label: Einführung
 ---
 
-Willkommen zu dem Zero-To-Hero CodeCamp für Juristen! 😁
+Willkommen zu der Zero-To-Hero Coding Academy für Juristen! 😁
 Hier bekommst du alle notwendigen Grundlagen zum Umgang mit der Programmiersprache Python 🐍 vermittelt. Python ist auf allen gängigen Betriebssystemen verfügbar und eine mächtige Programmiersprache. 🖥
 Nahezu alle großen Tech Unternehmen verwenden Python und auch sehr viele Problemstellungen lassen sich mithilfe von Python lösen.
 
