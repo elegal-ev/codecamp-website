@@ -186,6 +186,7 @@ for x in Vorlesungen:
 
 
 range - Die Wiederholungen können auch mit Hilfe der range-Funktion ausgeführt werden. Wichtig ist dabei, dass man in der Informatik bei 0 anfängt zu zählen und nicht bei 1. 
+
 Hier ein kleines Beispiel: 
 
 <CodeBlock frame="https://trinket.io/embed/python3/4290e8d215">

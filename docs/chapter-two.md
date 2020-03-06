@@ -10,7 +10,7 @@ import CodeBlock from './CodeBlock';
 
 ## Was ist eine Funktion?
 
-Eine Funktion ist eine benannte Prozedur. Dies ermoeglicht uns, Code, welchen wir zuvor geschrieben haben, wiederzuverwenden.
+Eine Funktion ist eine benannte Prozedur. Dies ermöglicht uns, Code, welchen wir zuvor geschrieben haben, wiederzuverwenden.
 
 Funktionen werden mit dem Begriff `def` (engl. define) eingeleitet:
 
@@ -26,7 +26,7 @@ hello_world() # Funktion ausfuehren
 
 </CodeBlock>
 
-Hierbei stellen die Leerzeichen vor den `print()`-Befehlen dar, was zur Funktion gehoert und was nicht. Spiel doch einfach selbst ein wenig mit der Einrückung rum!
+Hierbei stellen die Leerzeichen vor den `print()`-Befehlen dar, was zur Funktion gehört und was nicht. Spiel doch einfach selbst ein wenig mit der Einrückung rum!
 
 Genauso wie bei `print` wird diese einfach mit `()` aufgerufen:
 
@@ -44,8 +44,8 @@ y = 5
 
 </CodeBlock>
 
-Die Funktion kopiert ihren Inhalt an die Stelle in den Code, an der wie sie aufrufen.
-Der grade eben genutze Code ist also äquivalent zu dem unten stehenden.
+Die Funktion kopiert ihren Inhalt an die Stelle in den Code, an der wir sie aufrufen.
+Der gerade eben genutze Code ist also äquivalent zu dem unten stehenden.
 
 <CodeBlock frame="https://trinket.io/embed/python3/c4089e331f">
 
@@ -90,7 +90,7 @@ write_a_function_check(x)
 
 Betrachten wir folgende Problemstellung:
 
-Anwalt A hat in seiner Kanzelei zahlreiche Mandanten, die er taeglich mit einer netten Email begrüsst. Nachdem er durch seine Kooperation mit eLegal e.V. exponentielle Wachstüme erreicht hat, schrieb er Funktionen, die diese Aufgabe für ihn trivialisieren. Nun muss er für jeden seiner Mandanten eine komplett neue Funktion schreiben.
+Anwalt A hat in seiner Kanzelei zahlreiche Mandanten, die er täglich mit einer netten Email begrüsst. Nachdem durch seine Kooperation mit eLegal e.V. sein Mandantenstamm exponentielles Wachstum erlebt hat, schrieb er Funktionen, die diese Aufgabe für ihn trivialisieren. Allerdings muss er für jeden seiner Mandanten eine komplett neue Funktion schreiben.
 
 <CodeBlock frame="https://trinket.io/embed/python3/2ddfb0fbc5">
 
@@ -105,7 +105,7 @@ def gruss_an_bob():
 
 </CodeBlock>
 
-Gott sei Dank gibt es hierfuer Funktionsargumente!
+Gott sei Dank gibt es hierfür Funktionsargumente!
 
 Verwirrenderweise wird oft zwischen "Parametern" und "Argumenten" unterschieden.
 Bei Parametern handelt es sich um die Werte, welche beim erstmaligen definieren der Funktion oben angegeben werden. Beispielsweise ist "name" in der Funktion "gruss" unten ein Parameter. 
@@ -131,7 +131,7 @@ def langer_gruss(vorname, nachname, titel, wohnort):
 
 ## Schlüsselwortargument
 
-Schlüsselwortargumente werden verwendet um Parametern einen Standardwert zuzuweisen.
+Schlüsselwortargumente werden verwendet, um Parametern einen Standardwert zuzuweisen.
 Konkret bedeutet dies, dass die Funktion den Standardwert verwendet, außer man übergibt ein Funktionsargument.
 In diesem Fall wird der Standardwert überschrieben.
 
@@ -201,7 +201,7 @@ check_for_function_double(plusZwei(8))
 
 </CodeBlock>
 
-Versuch einfach mal das obige Beispiel so zu veraendern, dass die Funktion die eingegebene Zahl mal sich selbst nimmt!
+Versuch einfach mal das obige Beispiel so zu verändern, dass die Funktion die eingegebene Zahl mal sich selbst nimmt!
 
 ## Variablengültigkeitsbereich
 
@@ -216,7 +216,7 @@ verabschiedung = "Auf Wiedersehen"
 
 Jeder hat Zugriff auf Hochdeutsch.
 
-Betrachten wir diese Darstellung nun unter der Voraussetzung, dass sich außerdem Sprachbarrieren gebildet haben, welche in Funktionen dargestellt sind.
+Betrachten wir diese Darstellung nun unter der Voraussetzung, dass sich außerdem Sprachbarrieren gebildet haben, welche hier in Funktionen dargestellt sind.
 
 ```python
 begruessung = "Guten Tag"
