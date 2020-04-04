@@ -13,8 +13,10 @@
     "@docusaurus/preset-classic": "^2.0.0-alpha.50",
     "@docusaurus/theme-live-codeblock": "^2.0.0-alpha.50",
     "@material-ui/core": "^4.9.2",
+    "bootstrap": "^4.4.1",
     "classnames": "^2.2.6",
     "react": "^16.8.4",
+    "react-bootstrap": "^1.0.0",
     "react-dom": "^16.8.4"
   },
   "browserslist": {
